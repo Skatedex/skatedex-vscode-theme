@@ -40,23 +40,6 @@ xcopy skatedex-theme %USERPROFILE%\.vscode\extensions\skatedex-theme /E /I
 
 Restart VS Code, then `Cmd/Ctrl + K` `Cmd/Ctrl + T` and pick Skatedex Night or Skatedex Day.
 
-## Package as a .vsix
-
-```bash
-npm install -g @vscode/vsce
-cd skatedex-theme
-vsce package
-code --install-extension skatedex-theme-0.1.0.vsix
-```
-
-## Publish to the Marketplace
-
-1. Create a publisher at https://marketplace.visualstudio.com/manage and set `publisher` in `package.json` to match.
-2. Generate an Azure DevOps personal access token with Marketplace > Manage scope.
-3. `vsce login <publisher>` then `vsce publish`.
-
-Add a 128x128 `icon.png` to the extension root and re-add `"icon": "icon.png"` to `package.json` before publishing. The Skatedex blue logo works: https://cdn.skatedex.com/uploads/20230424165127/cropped-Skatedex-Logo-Blue-480x480.png
-
 ## Tweaking
 
 Both themes are plain JSON. `colors` drives the workbench chrome, `tokenColors` drives TextMate syntax scopes, and `semanticTokenColors` drives language-server highlighting, which takes priority when a language supports it. To change how something looks, run **Developer: Inspect Editor Tokens and Scopes** from the command palette with your cursor on the token, then edit the matching scope.
