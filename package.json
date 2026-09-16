@@ -1,0 +1,51 @@
+{
+  "name": "skatedex-theme",
+  "displayName": "Skatedex",
+  "description": "Skatedex color themes for VS Code. Night and Day variants built on the Skatedex palette: blue, gray, white, and black.",
+  "version": "0.1.0",
+  "publisher": "skatedex",
+  "license": "MIT",
+  "author": {
+    "name": "Kyle Niedzwiecki",
+    "url": "https://skatedex.com"
+  },
+  "bugs": {
+    "url": "https://github.com/skatedex/skatedex-vscode-theme/issues"
+  },
+  "homepage": "https://skatedex.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skatedex/skatedex-vscode-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "blue",
+    "skatedex"
+  ],
+  "galleryBanner": {
+    "color": "#0D1117",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Skatedex Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/skatedex-night-color-theme.json"
+      },
+      {
+        "label": "Skatedex Day",
+        "uiTheme": "vs",
+        "path": "./themes/skatedex-day-color-theme.json"
+      }
+    ]
+  }
+}
